@@ -21,5 +21,11 @@ public class UserRegistration{
 			lastName = sc.next();
 		}
 		
+		System.out.println("Enter the Email: ");
+		String email = sc.next();
+		while(!Pattern.matches("^[A-Za-z0-9]+(\\.[A-Za-z0-9-]+)?@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)?(\\.[A-Za-z]{2,})$",email)){
+			System.out.println("Ivalid input. Enter the Email: ");
+			email = sc.next();
+		}	
 	}
 }
