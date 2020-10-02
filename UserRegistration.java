@@ -30,7 +30,7 @@ public class UserRegistration{
 			
 		System.out.println("Enter the Phone Number: ");
 		String phone = sc.next();
-		while(!Pattern.matches("^[0-9]{2}[ ][0-9]{10}$",phone)){
+		while(!Pattern.matches("^[0-9]{2}\\s[0-9]{10}$",phone)){
 			System.out.println("Ivalid input. Enter the Phone Number: ");
 			phone = sc.nextLine();
 		}
