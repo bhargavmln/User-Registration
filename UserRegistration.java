@@ -26,6 +26,14 @@ public class UserRegistration{
 		while(!Pattern.matches("^[A-Za-z0-9]+(\\.[A-Za-z0-9-]+)?@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)?(\\.[A-Za-z]{2,})$",email)){
 			System.out.println("Ivalid input. Enter the Email: ");
 			email = sc.next();
-		}	
+		}
+			
+		System.out.println("Enter the Phone Number: ");
+		String phone = sc.next();
+		while(!Pattern.matches("^[0-9]{2}[ ][0-9]{10}$",phone)){
+			System.out.println("Ivalid input. Enter the Phone Number: ");
+			phone = sc.nextLine();
+		}
+		
 	}
 }
